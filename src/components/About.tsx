@@ -10,7 +10,7 @@ export default function About() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-soft border border-border shadow-soft">
             <Image
               src="/images/about-portrait.svg"
-              alt="Foto profissional placeholder — Sabrina Schmidt"
+              alt="Minha foto profissional — placeholder"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 90vw, 40vw"

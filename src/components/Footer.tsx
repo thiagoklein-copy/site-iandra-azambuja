@@ -49,8 +49,7 @@ export default function Footer() {
               {site.contact.heading}
             </Reveal>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-surface/70 sm:text-base">
-              Espaço seguro para conversar sobre o que você sente — e, para
-              empresas, apoio técnico em pessoas e cultura.
+              {site.contact.blurb}
             </p>
             <a
               href={site.whatsappUrl}

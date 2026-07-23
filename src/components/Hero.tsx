@@ -72,7 +72,7 @@ export default function Hero() {
           <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2rem] shadow-soft lg:ml-auto lg:max-w-none">
             <Image
               src="/images/hero-portrait.svg"
-              alt="Retrato profissional placeholder de Sabrina Schmidt"
+              alt="Minha foto profissional — placeholder"
               fill
               priority
               className="object-cover"

@@ -28,7 +28,7 @@ export const site = {
     secondaryCta: "Conheça meu trabalho",
     badges: [
       { label: "CRP 07/15606-RS" },
-      { label: "Mestre em Psicologia (PUCRS)" },
+      { label: "Mestra em Psicologia (PUCRS)" },
     ],
   },
   stats: [
@@ -38,12 +38,12 @@ export const site = {
     { value: "Docente", label: "ATITUS Educação" },
   ],
   about: {
-    heading: "Sobre Sabrina",
+    heading: "Sobre mim",
     paragraphs: [
-      "Psicóloga com atuação em Psicologia Organizacional e Clínica. Na área organizacional, atua em diagnóstico organizacional, análise de clima e cultura, mapeamento de competências, treinamento e desenvolvimento de equipes e lideranças, além de apoio a processos de recrutamento e seleção.",
-      "Na clínica, realiza atendimento psicológico individual com base na Terapia Cognitivo-Comportamental e na Terapia do Esquema, considerando o contexto de vida e as relações de trabalho de cada paciente.",
-      "Mestre em Psicologia (PUCRS), com pós-graduação em Dinâmica de Grupos (SBDG) e em Terapia Cognitivo-Comportamental (CBI of Miami). Cursa atualmente pós-graduação em Psicologia Organizacional e Gestão de Pessoas (PUCRS). Possui formação em Terapia do Esquema (Wainer) e certificação como Analista Comportamental (DISC/PDA).",
-      "Graduada em Direito (Universidade Feevale) e em Psicologia (UPF). É professora do curso de Psicologia na ATITUS Educação — Campus Porto Alegre, e Coordenadora do Serviço-Escola de Psicologia.",
+      "Sou psicóloga com atuação em Psicologia Organizacional e Clínica. Na área organizacional, atuo em diagnóstico organizacional, análise de clima e cultura, mapeamento de competências, treinamento e desenvolvimento de equipes e lideranças, além de apoio a processos de recrutamento e seleção.",
+      "Na clínica, realizo atendimento psicológico individual com base na Terapia Cognitivo-Comportamental e na Terapia do Esquema, considerando o contexto de vida e as relações de trabalho de cada paciente.",
+      "Sou mestra em Psicologia (PUCRS), com pós-graduação em Dinâmica de Grupos (SBDG) e em Terapia Cognitivo-Comportamental (CBI of Miami). Curso atualmente pós-graduação em Psicologia Organizacional e Gestão de Pessoas (PUCRS). Tenho formação em Terapia do Esquema (Wainer) e certificação como Analista Comportamental (DISC/PDA).",
+      "Sou graduada em Direito (Universidade Feevale) e em Psicologia (UPF). Sou professora do curso de Psicologia na ATITUS Educação — Campus Porto Alegre, e Coordenadora do Serviço-Escola de Psicologia.",
     ],
     tags: ["Mestrado PUCRS", "CRP 07/15606-RS", "Professora ATITUS"],
   },
@@ -106,10 +106,12 @@ export const site = {
   cta: {
     heading: "Dar o primeiro passo é o mais importante",
     subtext:
-      "Marque uma conversa inicial e entenda como a terapia pode ajudar você.",
+      "Vamos marcar uma conversa inicial? Assim você entende como posso te ajudar.",
     button: "Agendar pelo WhatsApp",
   },
   contact: {
     heading: "Atendimento em Novo Hamburgo",
+    blurb:
+      "Estou aqui para conversar sobre o que você sente — e, para empresas, oferecer apoio técnico em pessoas e cultura.",
   },
 } as const;
