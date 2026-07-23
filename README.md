@@ -7,7 +7,8 @@ Site one-page da psicóloga Sabrina Schmidt (clínica e organizacional), feito c
 - Next.js 14 (App Router)
 - TypeScript
 - Tailwind CSS
-- Google Fonts: Fraunces + Manrope
+- Google Fonts: Fraunces + Inter
+- Motion: `framer-motion` leve (hero + headings de seção)
 
 ## Desenvolvimento
 
@@ -36,7 +37,7 @@ WhatsApp CTA aponta para `https://wa.me/5551999487749`.
 ## Conteúdo e cores
 
 - Copy e dados centralizados em `src/content/site.ts`
-- Paleta custom em `tailwind.config.ts` (`cream`, `terracotta`, `ink`)
+- Paleta em `tailwind.config.ts`: `background`, `surface`, `accent`, `accent-dark`, `primary`, `muted`, `border`
 - Fotos placeholder em `public/images/` — substitua pelos arquivos reais mantendo os nomes (ou atualize os caminhos nos componentes)
 
 ## Estrutura

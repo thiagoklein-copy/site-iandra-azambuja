@@ -1,9 +1,10 @@
 import { site } from "@/content/site";
+import Reveal from "@/components/Reveal";
 
 function JsonLd() {
   const data = {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "ProfessionalService"],
+    "@type": "ProfessionalService",
     name: `${site.name} — ${site.title}`,
     description:
       "Psicóloga clínica e organizacional em Novo Hamburgo. Atendimento individual com base em TCC e Terapia do Esquema, e consultoria em recursos humanos.",
@@ -36,15 +37,18 @@ function JsonLd() {
 
 export default function Footer() {
   return (
-    <footer id="contato" className="scroll-mt-24 bg-ink text-cream-soft">
+    <footer id="contato" className="scroll-mt-24 bg-primary text-surface">
       <JsonLd />
       <div className="container-narrow section-padding !pb-10">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <h2 className="font-serif text-3xl font-semibold tracking-tight sm:text-4xl">
+            <Reveal
+              as="h2"
+              className="font-serif text-3xl font-semibold leading-snug tracking-tight sm:text-4xl"
+            >
               {site.contact.heading}
-            </h2>
-            <p className="mt-4 max-w-md text-sm leading-relaxed text-cream/70 sm:text-base">
+            </Reveal>
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-surface/70 sm:text-base">
               Espaço seguro para conversar sobre o que você sente — e, para
               empresas, apoio técnico em pessoas e cultura.
             </p>
@@ -60,17 +64,17 @@ export default function Footer() {
 
           <div className="grid gap-8 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-2">
             <div>
-              <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-terracotta-light">
+              <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
                 Contato
               </h3>
-              <address className="mt-4 not-italic text-sm leading-relaxed text-cream/80">
+              <address className="mt-4 not-italic text-sm leading-relaxed text-surface/80">
                 <p>{site.address.full}</p>
                 <p className="mt-3">
                   <a
                     href={site.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition hover:text-cream"
+                    className="transition hover:text-surface"
                   >
                     WhatsApp: {site.whatsappDisplay}
                   </a>
@@ -80,13 +84,13 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-terracotta-light">
+              <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
                 Navegação
               </h3>
-              <ul className="mt-4 space-y-2 text-sm text-cream/80">
+              <ul className="mt-4 space-y-2 text-sm text-surface/80">
                 {site.nav.map((item) => (
                   <li key={item.href}>
-                    <a href={item.href} className="transition hover:text-cream">
+                    <a href={item.href} className="transition hover:text-surface">
                       {item.label}
                     </a>
                   </li>
@@ -96,7 +100,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-3 border-t border-cream/10 pt-6 text-xs text-cream/50 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-14 flex flex-col gap-3 border-t border-surface/10 pt-6 text-xs text-surface/50 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © 2026 {site.name} {site.title} · {site.crp}
           </p>

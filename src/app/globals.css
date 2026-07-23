@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --background: #f7f3ec;
-  --foreground: #2c2622;
-  --accent: #c97b4a;
+  --background: #f7f2ea;
+  --foreground: #2b2420;
+  --accent: #c2703f;
 }
 
 html {
@@ -15,7 +15,7 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
 }
 
 @layer components {
@@ -28,45 +28,16 @@ body {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-terracotta px-6 py-3 text-sm font-semibold text-cream-soft shadow-card transition duration-300 hover:bg-terracotta-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-terracotta;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-surface shadow-card transition duration-300 hover:bg-accent-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
   }
 
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink/15 bg-transparent px-6 py-3 text-sm font-semibold text-ink transition duration-300 hover:border-terracotta/40 hover:text-terracotta-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-terracotta;
-  }
-
-  .fade-up {
-    animation: fadeUp 0.8s ease-out both;
-  }
-
-  .fade-up-delay {
-    animation: fadeUp 0.9s ease-out 0.15s both;
-  }
-
-  .fade-up-delay-2 {
-    animation: fadeUp 1s ease-out 0.3s both;
-  }
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-border bg-transparent px-6 py-3 text-sm font-semibold text-primary transition duration-300 hover:border-accent/40 hover:text-accent-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-
-  .fade-up,
-  .fade-up-delay,
-  .fade-up-delay-2 {
-    animation: none;
   }
 }

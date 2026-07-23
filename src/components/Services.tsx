@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { site } from "@/content/site";
+import Reveal from "@/components/Reveal";
 
 const icons: Record<string, ReactNode> = {
   therapy: (
@@ -66,31 +67,34 @@ const icons: Record<string, ReactNode> = {
 
 export default function Services() {
   return (
-    <section id="servicos" className="section-padding bg-cream-soft scroll-mt-24">
+    <section id="servicos" className="section-padding bg-surface scroll-mt-24">
       <div className="container-narrow">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-terracotta-dark">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-accent-dark">
             Serviços
           </p>
-          <h2 className="font-serif text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+          <Reveal
+            as="h2"
+            className="font-serif text-3xl font-semibold leading-snug tracking-tight text-primary sm:text-4xl"
+          >
             {site.services.heading}
-          </h2>
+          </Reveal>
         </div>
 
-        <ul className="mt-12 divide-y divide-ink/10 overflow-hidden rounded-soft border border-ink/10 bg-cream shadow-card">
+        <ul className="mt-12 divide-y divide-border overflow-hidden rounded-soft border border-border bg-surface shadow-card">
           {site.services.items.map((service) => (
             <li
               key={service.title}
-              className="flex items-start gap-4 px-5 py-5 transition hover:bg-cream-deep/50 sm:items-center sm:gap-6 sm:px-7 sm:py-6"
+              className="flex items-start gap-4 px-5 py-5 transition hover:bg-background/60 sm:items-center sm:gap-6 sm:px-7 sm:py-6"
             >
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-terracotta/10 text-terracotta-dark">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-accent/10 text-accent-dark">
                 {icons[service.icon]}
               </div>
               <div className="min-w-0 flex-1">
-                <h3 className="font-serif text-xl font-semibold text-ink">
+                <h3 className="font-serif text-xl font-semibold text-primary">
                   {service.title}
                 </h3>
-                <p className="mt-1 text-sm leading-relaxed text-ink-muted sm:text-base">
+                <p className="mt-1 text-sm leading-relaxed text-muted sm:text-base">
                   {service.description}
                 </p>
               </div>

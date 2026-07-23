@@ -1,27 +1,29 @@
 import type { Metadata } from "next";
-import { Fraunces, Manrope } from "next/font/google";
+import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-fraunces",
   display: "swap",
+  weight: ["500", "600"],
 });
 
-const manrope = Manrope({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-manrope",
+  variable: "--font-inter",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sabrinaschmidt.com.br"),
   title: {
-    default: "Sabrina Schmidt | Psicóloga Clínica e Organizacional em Novo Hamburgo",
+    default:
+      "Sabrina Schmidt | Psicóloga Clínica e Organizacional em Novo Hamburgo",
     template: "%s | Sabrina Schmidt Psicóloga",
   },
   description:
-    "Psicóloga clínica e organizacional em Novo Hamburgo (CRP 07/15606-RS). Atendimento individual com TCC e Terapia do Esquema, e consultoria em RH. Agende pelo WhatsApp.",
+    "Psicóloga em Novo Hamburgo (CRP 07/15606-RS). Atendimento individual com TCC e Terapia do Esquema, e consultoria em RH. Agende pelo WhatsApp.",
   keywords: [
     "psicóloga Novo Hamburgo",
     "terapia cognitivo-comportamental",
@@ -65,8 +67,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${fraunces.variable} ${manrope.variable}`}>
-      <body className="min-h-screen bg-cream font-sans text-ink antialiased">
+    <html lang="pt-BR" className={`${fraunces.variable} ${inter.variable}`}>
+      <body className="min-h-screen bg-background font-sans text-primary antialiased">
         {children}
       </body>
     </html>
