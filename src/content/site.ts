@@ -7,6 +7,10 @@ export const site = {
   whatsappDisplay: "(51) 99948-7749",
   phoneTel: "+5551999487749",
   email: "contato@sabrinaschmidt.com.br",
+  instagram: {
+    handle: "@sabrinaschmidt",
+    url: "https://instagram.com/sabrinaschmidt",
+  },
   address: {
     street: "R. Carlos Gomes, 36 - Sl 12 - Vila Rosa",
     city: "Novo Hamburgo",
@@ -110,8 +114,10 @@ export const site = {
     button: "Agendar pelo WhatsApp",
   },
   contact: {
+    sectionHeading: "Vamos conversar",
     heading: "Atendimento em Novo Hamburgo",
     blurb:
-      "Estou aqui para conversar sobre o que você sente — e, para empresas, oferecer apoio técnico em pessoas e cultura.",
+      "Preencha o formulário e eu recebo sua mensagem direto no WhatsApp. Estou aqui para escutar.",
+    hours: "Segunda a Sexta · atendimento com horário agendado",
   },
 } as const;
