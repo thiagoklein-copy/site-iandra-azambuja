@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#EDE6DA"/>
+      <stop offset="100%" stop-color="#C97B4A" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#g2)"/>
+  <rect x="120" y="160" width="660" height="780" rx="40" fill="#FBF8F3" opacity="0.35"/>
+  <text x="450" y="560" text-anchor="middle" fill="#2C2622" opacity="0.4" font-family="Georgia, serif" font-size="30">Sobre Sabrina</text>
+</svg>
