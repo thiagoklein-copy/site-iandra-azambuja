@@ -1,6 +1,6 @@
-# Sabrina Schmidt — Site Institucional
+# Iandra Mensch Azambuja — Site Institucional
 
-Site one-page da psicóloga Sabrina Schmidt (clínica e organizacional), feito com Next.js 14, TypeScript e Tailwind CSS. Pronto para deploy na Vercel.
+Site one-page da psicóloga Iandra Mensch Azambuja (clínica), feito com Next.js 14, TypeScript e Tailwind CSS. Pronto para deploy na Vercel.
 
 ## Stack
 
@@ -32,26 +32,27 @@ npm start
 2. Framework preset: Next.js
 3. Deploy — sem variáveis de ambiente obrigatórias
 
-WhatsApp CTA aponta para `https://wa.me/5551999487749`.
+WhatsApp CTA aponta para `https://wa.me/5551989559882`.
 
 ## Conteúdo e cores
 
 - Copy e dados centralizados em `src/content/site.ts`
-- Paleta em `tailwind.config.ts`: `background`, `surface`, `accent`, `accent-dark`, `primary`, `muted`, `border`
-- Fotos placeholder em `public/images/` — substitua pelos arquivos reais mantendo os nomes (ou atualize os caminhos nos componentes)
+- Paleta em `tailwind.config.ts`: cream `#F7F3EE`, accent dusty blue `#5B7C99`, charcoal text `#211F1D`
+- Fotos placeholder em `public/images/` — substitua a foto de estúdio em `hero-portrait` (preferencialmente JPG/WebP) e atualize o caminho no Hero / metadata
 
 ## Estrutura
 
 ```
 src/
   app/           # layout, page, globals
-  components/    # Header, Hero, StatsBar, About, Services, ProcessSteps, CtaBanner, Footer, WhatsAppButton
+  components/    # Header, Hero, StatsBar, About, Services, Testimonials, CtaBanner, Footer, WhatsAppButton
   content/       # site.ts
 public/images/   # placeholders
 ```
 
 ## Contato (produção)
 
-- Endereço: R. Carlos Gomes, 36 - Sl 12 - Vila Rosa, Novo Hamburgo - RS, 93315-040
-- WhatsApp: (51) 99948-7749
-- CRP: 07/15606-RS
+- Endereço: R. Domingos Martins, 261 - Centro, Canoas - RS, 92010-170
+- WhatsApp: (51) 98955-9882
+- CRP: 07/44362
+- Horário: Segunda a sexta, 8h às 20h · Sábado, 8h às 15h · Domingo, fechado

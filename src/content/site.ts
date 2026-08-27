@@ -1,123 +1,114 @@
 export const site = {
-  name: "Sabrina Schmidt",
+  name: "Iandra Mensch Azambuja",
   title: "Psicóloga",
-  eyebrow: "Psicóloga Clínica e Organizacional",
-  crp: "CRP 07/15606-RS",
-  whatsappUrl: "https://wa.me/5551999487749",
-  whatsappDisplay: "(51) 99948-7749",
-  phoneTel: "+5551999487749",
-  email: "contato@sabrinaschmidt.com.br",
-  instagram: {
-    handle: "@sabrinaschmidt",
-    url: "https://instagram.com/sabrinaschmidt",
-  },
+  eyebrow: "Psicóloga Clínica · CRP 07/44362",
+  crp: "CRP 07/44362",
+  whatsappUrl: "https://wa.me/5551989559882",
+  whatsappDisplay: "(51) 98955-9882",
+  phoneTel: "+5551989559882",
+  siteUrl: "https://iandraazambuja.com.br",
+  googleMapsUrl:
+    "https://www.google.com/maps/search/?api=1&query=R.+Domingos+Martins%2C+261+-+Centro%2C+Canoas+-+RS%2C+92010-170",
   address: {
-    street: "R. Carlos Gomes, 36 - Sl 12 - Vila Rosa",
-    city: "Novo Hamburgo",
+    street: "R. Domingos Martins, 261 - Centro",
+    city: "Canoas",
     state: "RS",
-    postalCode: "93315-040",
-    full: "R. Carlos Gomes, 36 - Sl 12 - Vila Rosa, Novo Hamburgo - RS, 93315-040",
+    postalCode: "92010-170",
+    full: "R. Domingos Martins, 261 - Centro, Canoas - RS, 92010-170",
+  },
+  hours: {
+    display:
+      "Segunda a sexta, 8h às 20h · Sábado, 8h às 15h · Domingo, fechado",
+    schema: [
+      {
+        days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "20:00",
+      },
+      {
+        days: ["Saturday"],
+        opens: "08:00",
+        closes: "15:00",
+      },
+    ],
   },
   nav: [
     { label: "Sobre", href: "#sobre" },
     { label: "Serviços", href: "#servicos" },
-    { label: "Como Funciona", href: "#como-funciona" },
+    { label: "Depoimentos", href: "#depoimentos" },
     { label: "Contato", href: "#contato" },
   ],
   hero: {
-    h1: "Cuidado psicológico para quem busca clareza e equilíbrio",
+    h1: "Psicoterapia que une ciência e afeto",
     subheadline:
-      "Atendimento individual em Novo Hamburgo, com base em Terapia Cognitivo-Comportamental e Terapia do Esquema. Um espaço seguro para entender o que você sente e construir mudanças reais.",
+      "Atendimento a adultos e crianças, presencial em Canoas ou online. Um espaço de escuta qualificada para você entender o que sente e seguir com mais leveza.",
     primaryCta: "Agendar Consulta",
     secondaryCta: "Conheça meu trabalho",
-    badges: [
-      { label: "CRP 07/15606-RS" },
-      { label: "Mestra em Psicologia (PUCRS)" },
+    callouts: [
+      "Psicóloga Clínica, atuo com a abordagem Cognitivo Comportamental.",
+      "Acredito em uma escuta que acolhe e transforma.",
+      "É possível viver com propósito e leveza.",
+      "Meu compromisso é dar sentido às experiências que atravessamos.",
     ],
   },
   stats: [
-    { value: "Mestrado", label: "Psicologia (PUCRS)" },
-    { value: "3", label: "Pós-graduações concluídas" },
-    { value: "CRP 07/15606-RS", label: "Registro ativo" },
-    { value: "Docente", label: "ATITUS Educação" },
+    { value: "5,0", label: "Avaliação no Google (25 avaliações)" },
+    { value: "CRP 07/44362", label: "Registro ativo" },
+    { value: "Adultos e Crianças", label: "Público atendido" },
+    { value: "Presencial e Online", label: "Modalidades de atendimento" },
   ],
   about: {
-    heading: "Sobre mim",
+    heading: "Sobre Iandra",
     paragraphs: [
-      "Sou psicóloga com atuação em Psicologia Organizacional e Clínica. Na área organizacional, atuo em diagnóstico organizacional, análise de clima e cultura, mapeamento de competências, treinamento e desenvolvimento de equipes e lideranças, além de apoio a processos de recrutamento e seleção.",
-      "Na clínica, realizo atendimento psicológico individual com base na Terapia Cognitivo-Comportamental e na Terapia do Esquema, considerando o contexto de vida e as relações de trabalho de cada paciente.",
-      "Sou mestra em Psicologia (PUCRS), com pós-graduação em Dinâmica de Grupos (SBDG) e em Terapia Cognitivo-Comportamental (CBI of Miami). Curso atualmente pós-graduação em Psicologia Organizacional e Gestão de Pessoas (PUCRS). Tenho formação em Terapia do Esquema (Wainer) e certificação como Analista Comportamental (DISC/PDA).",
-      "Sou graduada em Direito (Universidade Feevale) e em Psicologia (UPF). Sou professora do curso de Psicologia na ATITUS Educação — Campus Porto Alegre, e Coordenadora do Serviço-Escola de Psicologia.",
+      "Sou psicóloga clínica, CRP 07/44362, e atendo adultos e crianças em consultório em Canoas ou por atendimento online. Trabalho com a abordagem Cognitivo-Comportamental, unindo base científica a um olhar afetivo e humano para cada história que chega até mim.",
+      "Acredito em uma escuta que acolhe e transforma. Meu compromisso é ajudar você a dar sentido às experiências que atravessa, com ética, confiança e respeito ao seu tempo.",
     ],
-    tags: ["Mestrado PUCRS", "CRP 07/15606-RS", "Professora ATITUS"],
+    tags: [
+      "CRP 07/44362",
+      "Abordagem Cognitivo-Comportamental",
+      "Canoas - RS",
+    ],
   },
   services: {
     heading: "Como posso ajudar",
     items: [
       {
-        title: "Psicoterapia",
+        title: "Psicoterapia Individual (Adultos)",
         description:
-          "Atendimento individual para ansiedade, autoconhecimento e mudanças de vida.",
-        icon: "therapy",
+          "Atendimento para ansiedade, autoconhecimento e mudanças de vida, com base científica e escuta acolhedora.",
+        icon: "adults",
       },
       {
-        title: "Avaliação Psicológica",
+        title: "Psicoterapia Infantil",
         description:
-          "Avaliações técnicas para fins clínicos, profissionais ou jurídicos.",
-        icon: "assessment",
+          "Acompanhamento para crianças, com abordagens atualizadas e ambiente acolhedor.",
+        icon: "children",
       },
       {
-        title: "Avaliação Psicossocial",
-        description: "Análise do contexto psicológico e social do paciente.",
-        icon: "psychosocial",
-      },
-      {
-        title: "Consultoria em Recursos Humanos",
+        title: "Atendimento Online",
         description:
-          "Diagnóstico organizacional, clima, cultura e desenvolvimento de equipes.",
-        icon: "hr",
-      },
-      {
-        title: "Laudo Pericial",
-        description: "Elaboração de laudos técnicos para processos judiciais.",
-        icon: "report",
+          "Sessões por videochamada com a mesma qualidade do atendimento presencial, para todo o Brasil.",
+        icon: "online",
       },
     ],
   },
-  process: {
-    heading: "Como funciona o primeiro atendimento",
-    steps: [
-      {
-        number: "01",
-        title: "Contato inicial",
-        description:
-          "Você entra em contato pelo WhatsApp e agendamos um horário.",
-      },
-      {
-        number: "02",
-        title: "Primeira sessão",
-        description:
-          "Conversamos sobre o que te trouxe até aqui e como posso ajudar.",
-      },
-      {
-        number: "03",
-        title: "Acompanhamento",
-        description:
-          "Construímos juntos, sessão a sessão, um plano de cuidado no seu ritmo.",
-      },
+  testimonials: {
+    heading: "O que dizem sobre o atendimento",
+    rating: "5,0",
+    reviewCount: 25,
+    themes: [
+      "Atendimento descrito como humanizado, acolhedor e com escuta qualificada.",
+      "Pacientes destacam ética, comprometimento e confiança no trabalho.",
+      "Famílias relatam evolução no acompanhamento de crianças e adolescentes.",
     ],
   },
   cta: {
     heading: "Dar o primeiro passo é o mais importante",
     subtext:
-      "Vamos marcar uma conversa inicial? Assim você entende como posso te ajudar.",
+      "Marque uma conversa inicial e entenda como a terapia pode ajudar você ou sua família.",
     button: "Agendar pelo WhatsApp",
   },
   contact: {
-    sectionHeading: "Vamos conversar",
-    heading: "Atendimento em Novo Hamburgo",
-    blurb:
-      "Preencha o formulário e eu recebo sua mensagem direto no WhatsApp. Estou aqui para escutar.",
-    hours: "Segunda a Sexta · atendimento com horário agendado",
+    heading: "Atendimento em Canoas",
   },
 } as const;

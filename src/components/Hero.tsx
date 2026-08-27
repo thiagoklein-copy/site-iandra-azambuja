@@ -4,6 +4,13 @@ import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { site } from "@/content/site";
 
+const calloutPositions = [
+  "lg:absolute lg:-left-3 lg:top-10 lg:max-w-[13.5rem]",
+  "lg:absolute lg:-right-2 lg:top-16 lg:max-w-[13rem]",
+  "lg:absolute lg:-left-4 lg:bottom-28 lg:max-w-[14rem]",
+  "lg:absolute lg:right-0 lg:bottom-12 lg:max-w-[13.5rem]",
+] as const;
+
 export default function Hero() {
   const reduceMotion = useReducedMotion();
 
@@ -60,42 +67,69 @@ export default function Hero() {
               {site.hero.secondaryCta}
             </a>
           </motion.div>
-          <motion.p {...fade(0.3)} className="mt-5 text-sm text-muted">
-            {site.crp} · Novo Hamburgo / RS
-          </motion.p>
         </div>
 
-        <motion.div
-          {...fade(0.18)}
-          className="relative lg:col-span-6"
-        >
+        <motion.div {...fade(0.18)} className="relative lg:col-span-6">
           <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2rem] shadow-soft lg:ml-auto lg:max-w-none">
+            {/* Substituir por /images/hero-portrait.jpg (retrato de estúdio) quando o arquivo estiver em public/images/ */}
             <Image
               src="/images/hero-portrait.svg"
-              alt="Minha foto profissional — placeholder"
+              alt="Iandra Mensch Azambuja, psicóloga clínica"
               fill
               priority
-              className="object-cover"
+              className="object-cover object-top"
               sizes="(max-width: 1024px) 90vw, 42vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/15 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/25 via-transparent to-transparent" />
           </div>
 
-          <div className="absolute -left-2 bottom-10 max-w-[11.5rem] rounded-2xl border border-border bg-surface/95 px-4 py-3 shadow-float backdrop-blur sm:-left-4 sm:max-w-[13rem]">
-            <p className="text-xs font-semibold text-primary sm:text-sm">
-              {site.hero.badges[0].label}
-            </p>
-            <p className="mt-0.5 text-[11px] text-muted">Registro profissional</p>
-          </div>
-
-          <div className="absolute -right-1 top-8 max-w-[12rem] rounded-2xl border border-border bg-surface/95 px-4 py-3 shadow-float backdrop-blur sm:right-2 sm:max-w-[14rem]">
-            <p className="text-xs font-semibold text-primary sm:text-sm">
-              {site.hero.badges[1].label}
-            </p>
-            <p className="mt-0.5 text-[11px] text-muted">Formação acadêmica</p>
-          </div>
+          {/* Desktop: badges flutuantes · Mobile: lista empilhada abaixo da foto */}
+          <ul className="mt-5 space-y-3 lg:mt-0 lg:contents" aria-label="Sobre a abordagem">
+            {site.hero.callouts.map((text, index) => (
+              <li
+                key={text}
+                className={`relative rounded-2xl border border-border bg-surface/95 px-4 py-3 shadow-float backdrop-blur ${calloutPositions[index]}`}
+              >
+                <span
+                  className="mb-1.5 hidden text-accent lg:block"
+                  aria-hidden
+                >
+                  <CurvedArrow index={index} />
+                </span>
+                <p className="text-xs leading-snug text-primary sm:text-sm">
+                  {text}
+                </p>
+              </li>
+            ))}
+          </ul>
         </motion.div>
       </div>
     </section>
+  );
+}
+
+function CurvedArrow({ index }: { index: number }) {
+  const flip = index % 2 === 1;
+  return (
+    <svg
+      viewBox="0 0 40 18"
+      className={`h-3.5 w-8 ${flip ? "ml-auto rotate-180" : ""}`}
+      fill="none"
+      aria-hidden
+    >
+      <path
+        d="M2 14 C12 2, 26 2, 36 10"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M32 6.5 L36 10 L31.5 12.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 }

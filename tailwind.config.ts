@@ -9,13 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#F7F2EA",
+        background: "#F7F3EE",
         surface: "#FFFFFF",
         accent: {
-          DEFAULT: "#C2703F",
-          dark: "#9C5730",
+          DEFAULT: "#5B7C99",
+          dark: "#425A70",
         },
-        primary: "#2B2420",
+        primary: "#211F1D",
         muted: "#6B6058",
         border: "#E7DDD0",
       },
@@ -24,9 +24,9 @@ const config: Config = {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 12px 40px -12px rgba(43, 36, 32, 0.16)",
-        card: "0 8px 28px -10px rgba(43, 36, 32, 0.12)",
-        float: "0 10px 30px -8px rgba(43, 36, 32, 0.18)",
+        soft: "0 12px 40px -12px rgba(33, 31, 29, 0.16)",
+        card: "0 8px 28px -10px rgba(33, 31, 29, 0.12)",
+        float: "0 10px 30px -8px rgba(33, 31, 29, 0.18)",
       },
       borderRadius: {
         soft: "1.25rem",

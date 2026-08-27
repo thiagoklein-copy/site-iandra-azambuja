@@ -3,7 +3,7 @@ import { site } from "@/content/site";
 import Reveal from "@/components/Reveal";
 
 const icons: Record<string, ReactNode> = {
-  therapy: (
+  adults: (
     <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden>
       <path
         d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10Z"
@@ -13,53 +13,40 @@ const icons: Record<string, ReactNode> = {
       />
     </svg>
   ),
-  assessment: (
+  children: (
     <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden>
+      <circle cx="12" cy="8" r="3" stroke="currentColor" strokeWidth="1.6" />
       <path
-        d="M8 7h8M8 12h5M7 3h10a2 2 0 0 1 2 2v14l-3-2-3 2-3-2-3 2V5a2 2 0 0 1 2-2Z"
+        d="M6 19c.7-3.2 2.8-4.8 6-4.8s5.3 1.6 6 4.8"
         stroke="currentColor"
         strokeWidth="1.6"
         strokeLinecap="round"
-        strokeLinejoin="round"
       />
-    </svg>
-  ),
-  psychosocial: (
-    <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden>
-      <circle cx="9" cy="8" r="3" stroke="currentColor" strokeWidth="1.6" />
-      <circle cx="17" cy="9" r="2.5" stroke="currentColor" strokeWidth="1.6" />
       <path
-        d="M3.5 19c.8-3 2.9-4.5 5.5-4.5S14 16 14.8 19M14 14.5c1.7-.3 3.3.3 4.5 1.8"
+        d="M8.5 5.5c-.6-1.2-1.6-1.8-2.7-1.5M15.5 5.5c.6-1.2 1.6-1.8 2.7-1.5"
         stroke="currentColor"
         strokeWidth="1.6"
         strokeLinecap="round"
       />
     </svg>
   ),
-  hr: (
+  online: (
     <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden>
+      <rect
+        x="3"
+        y="5"
+        width="13"
+        height="10"
+        rx="1.5"
+        stroke="currentColor"
+        strokeWidth="1.6"
+      />
       <path
-        d="M4 19V7l8-3 8 3v12M8 19v-6h8v6"
+        d="M16 9.5 20 7v8l-4-2.5M8 18h5"
         stroke="currentColor"
         strokeWidth="1.6"
         strokeLinecap="round"
         strokeLinejoin="round"
-      />
-    </svg>
-  ),
-  report: (
-    <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden>
-      <path
-        d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M14 3v5h5M9 13h6M9 17h4"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
       />
     </svg>
   ),

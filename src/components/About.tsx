@@ -10,7 +10,7 @@ export default function About() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-soft border border-border shadow-soft">
             <Image
               src="/images/about-portrait.svg"
-              alt="Minha foto profissional — placeholder"
+              alt="Ambiente acolhedor de atendimento psicológico"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 90vw, 40vw"
@@ -20,7 +20,7 @@ export default function About() {
             <div className="relative aspect-[5/4]">
               <Image
                 src="/images/therapy-space.svg"
-                alt="Ambiente de atendimento — imagem placeholder"
+                alt="Espaço de terapia — visual placeholder"
                 fill
                 className="object-cover"
                 sizes="160px"
